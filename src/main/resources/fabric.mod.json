@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "autotips",
+  "version": "${version}",
+  "name": "AutoTips",
+  "description": "一个在特定情况下自动显示文字/图标警告的模组",
+  "authors": [],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/autotips/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.maple_bamboo_team.autotips.client.AutotipsClient"
+    ],
+    "main": [
+      "me.maple_bamboo_team.autotips.Autotips"
+    ]
+  },
+  "mixins": [
+    "autotips.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
